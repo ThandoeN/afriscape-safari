@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Africape - Plan Your Zimbabwe Safari Adventure</title>
+    
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'safari-dark': '#1a472a',
+              'safari-green': '#2e8b57',
+              'safari-gold': '#d4af37',
+              'safari-light': '#f8f8f8',
+              'safari-gray': '#666666',
+            },
+            fontFamily: {
+              'montserrat': ['Montserrat', 'sans-serif'],
+              'opensans': ['Open Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .contact-card {
+        transition: all 0.3s ease;
+      }
+      .contact-card:hover {
+        transform: translateY(-5px);
+      }
+      input:focus, textarea:focus, select:focus {
+        outline: none;
+        ring: 2px;
+      }
+    </style>
+</head>
+<body class="font-opensans text-safari-gray">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-safari-green rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">A</span>
+                        </div>
+                        <span class="font-bold text-xl text-safari-dark hidden sm:block">Africape</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-safari-dark hover:text-safari-green font-medium px-3 py-2">Home</a>
+                    <a href="/pages/safari-journeys.html" class="text-safari-dark hover:text-safari-green font-medium px-3 py-2">Safari Journeys</a>
+                    <a href="/pages/the-africape-way.html" class="text-safari-dark hover:text-safari-green font-medium px-3 py-2">The Africape Way</a>
+                    <a href="/pages/contact.html" class="text-safari-dark hover:text-safari-green font-medium px-3 py-2">Contact Us</a>
+                    <a href="#contact-form" class="bg-safari-green hover:bg-safari-dark text-white font-bold py-2 px-6 rounded-lg ml-4">Plan Your Trip</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-safari-dark p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-3 px-4">
+                    <a href="/" class="text-safari-dark hover:text-safari-green font-medium py-2">Home</a>
+                    <a href="/pages/safari-journeys.html" class="text-safari-dark hover:text-safari-green font-medium py-2">Safari Journeys</a>
+                    <a href="/pages/the-africape-way.html" class="text-safari-dark hover:text-safari-green font-medium py-2">The Africape Way</a>
+                    <a href="/pages/contact.html" class="text-safari-dark hover:text-safari-green font-medium py-2">Contact Us</a>
+                    <a href="#contact-form" class="bg-safari-green hover:bg-safari-dark text-white font-bold py-3 rounded-lg text-center">Plan Your Trip</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="h-16"></div>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-cover bg-center min-h-[50vh] flex items-center" style="background-image: linear-gradient(rgba(26, 71, 42, 0.85), rgba(46, 139, 87, 0.75)), url('/images/contact-hero.jpg');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+                Start planning your unforgettable Zimbabwe safari adventure with our local experts
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Contact Card 1: Phone -->
+                <div class="contact-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-orange-500 text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-dark mb-4">Call Us</h3>
+                    <p class="text-gray-600 mb-6">
+                        Speak directly with our safari experts for immediate assistance and trip planning.
+                    </p>
+                    <a href="tel:+263772852040" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                        +263 772 852 040
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Mon-Fri: 8AM-6PM | Sat: 9AM-1PM (CAT)</p>
+                </div>
+                
+                <!-- Contact Card 2: Email -->
+                <div class="contact-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-teal-500 text-center">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-dark mb-4">Email Us</h3>
+                    <p class="text-gray-600 mb-6">
+                        Send us your questions, trip ideas, or requests. We respond within 24 hours.
+                    </p>
+                    <a href="mailto:info@africape.com" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                        info@africape.com
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">For inquiries, quotes, and trip planning</p>
+                </div>
+                
+                <!-- Contact Card 3: WhatsApp -->
+                <div class="contact-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-safari-green text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-safari-green" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.892 0-3.18-1.24-6.162-3.495-8.411"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-safari-dark mb-4">WhatsApp</h3>
+                    <p class="text-gray-600 mb-6">
+                        Message us directly for quick questions or to start planning your safari.
+                    </p>
+                    <a href="https://wa.me/263772852040" target="_blank" class="inline-block bg-safari-green hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                        +263 772 852 040
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Quick responses, convenient messaging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section id="contact-form" class="py-16 bg-safari-light">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-safari-dark mb-4">
+                        Get in Touch
+                    </h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Fill out the form below and our safari experts will contact you within 24 hours to start planning your dream Zimbabwe adventure.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold text-safari-dark mb-6">Send a Message</h3>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- First Name -->
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                    <input type="text" 
+                                           id="firstName" 
+                                           name="firstName" 
+                                           required
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                                </div>
+                                
+                                <!-- Last Name -->
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                    <input type="text" 
+                                           id="lastName" 
+                                           name="lastName" 
+                                           required
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone"
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                            </div>
+                            
+                            <!-- Inquiry Type -->
+                            <div>
+                                <label for="inquiryType" class="block text-sm font-medium text-gray-700 mb-2">Inquiry Type *</label>
+                                <select id="inquiryType" 
+                                        name="inquiryType" 
+                                        required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="safari-quote">Safari Quote/Booking</option>
+                                    <option value="custom-safari">Custom Safari Request</option>
+                                    <option value="group-booking">Group/Corporate Booking</option>
+                                    <option value="honeymoon">Honeymoon Safari</option>
+                                    <option value="family-safari">Family Safari</option>
+                                    <option value="photography">Photography Safari</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Travel Dates -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Travel Month -->
+                                <div>
+                                    <label for="travelMonth" class="block text-sm font-medium text-gray-700 mb-2">Preferred Travel Month</label>
+                                    <select id="travelMonth" 
+                                            name="travelMonth"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                                        <option value="" selected>Any time</option>
+                                        <option value="jan-mar">January - March</option>
+                                        <option value="apr-jun">April - June</option>
+                                        <option value="jul-sep">July - September</option>
+                                        <option value="oct-dec">October - December</option>
+                                        <option value="specific">Specific dates (mention below)</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Travelers -->
+                                <div>
+                                    <label for="travelers" class="block text-sm font-medium text-gray-700 mb-2">Number of Travelers</label>
+                                    <select id="travelers" 
+                                            name="travelers"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300">
+                                        <option value="" selected>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3-4">3-4</option>
+                                        <option value="5-6">5-6</option>
+                                        <option value="7+">7+</option>
+                                        <option value="group">Large Group (10+)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message *</label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          rows="5" 
+                                          required
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-safari-green focus:border-safari-green transition-colors duration-300"
+                                          placeholder="Tell us about your safari dreams, interests, budget, and any specific requests..."></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <div>
+                                <button type="submit" 
+                                        class="w-full bg-safari-green hover:bg-safari-dark text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105">
+                                    Send Message
+                                </button>
+                                <p class="text-sm text-gray-500 mt-3">
+                                    * Required fields. By submitting this form, you agree to our Privacy Policy and consent to being contacted by Africape.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info & FAQ -->
+                    <div class="space-y-8">
+                        <!-- Contact Details -->
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <h3 class="text-2xl font-bold text-safari-dark mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-5 h-5 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Email</h4>
+                                        <a href="mailto:info@africape.com" class="text-safari-green hover:text-safari-dark">info@africape.com</a>
+                                        <p class="text-sm text-gray-600 mt-1">For all inquiries and trip planning</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Phone -->
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Phone</h4>
+                                        <a href="tel:+263772852040" class="text-safari-green hover:text-safari-dark">+263 772 852 040</a>
+                                        <p class="text-sm text-gray-600 mt-1">Mon-Fri: 8AM-6PM, Sat: 9AM-1PM (CAT)</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- WhatsApp -->
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-5 h-5 text-safari-green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.892 0-3.18-1.24-6.162-3.495-8.411"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">WhatsApp</h4>
+                                        <a href="https://wa.me/263772852040" target="_blank" class="text-safari-green hover:text-safari-dark">+263 772 852 040</a>
+                                        <p class="text-sm text-gray-600 mt-1">Quick responses for trip planning</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Address -->
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <svg class="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Based in Zimbabwe</h4>
+                                        <p class="text-gray-700">Harare, Zimbabwe</p>
+                                        <p class="text-sm text-gray-600 mt-1">Local safari experts covering all Zimbabwe destinations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ -->
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <h3 class="text-2xl font-bold text-safari-dark mb-6">Quick Questions</h3>
+                            
+                            <div class="space-y-4">
+                                <!-- FAQ 1 -->
+                                <div class="border-b border-gray-100 pb-4">
+                                    <h4 class="font-bold text-gray-800 mb-2">How soon will you respond?</h4>
+                                    <p class="text-gray-600 text-sm">We respond to all inquiries within 24 hours, often much sooner. For urgent matters, call us directly.</p>
+                                </div>
+                                
+                                <!-- FAQ 2 -->
+                                <div class="border-b border-gray-100 pb-4">
+                                    <h4 class="font-bold text-gray-800 mb-2">Do you charge for consultations?</h4>
+                                    <p class="text-gray-600 text-sm">No, all initial consultations and safari planning are completely free. We only charge for confirmed bookings.</p>
+                                </div>
+                                
+                                <!-- FAQ 3 -->
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-2">What information should I include?</h4>
+                                    <p class="text-gray-600 text-sm">The more details the better! Include travel dates, number of people, interests, budget range, and any specific requests.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <a href="/pages/safari-journeys.html" class="inline-flex items-center text-safari-green hover:text-safari-dark font-medium">
+                                    Browse our safari journeys
+                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-safari-dark mb-4">
+                        Our Location
+                    </h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Based in Zimbabwe, we're perfectly positioned to create authentic safari experiences across the country.
+                    </p>
+                </div>
+                
+                <!-- Map Container -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <!-- Map Image (You can replace with embedded Google Map) -->
+                    <div class="relative h-96 bg-gray-200">
+                        <!-- This is a placeholder - replace with actual map -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-safari-dark/10 to-safari-green/10">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 bg-safari-green rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <span class="text-white font-bold text-2xl">A</span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-safari-dark mb-2">Africape Safari</h3>
+                                <p class="text-gray-700">Harare, Zimbabwe</p>
+                                <p class="text-gray-600 mt-2">Local experts covering all of Zimbabwe</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Overlay Info -->
+                        <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg max-w-xs">
+                            <h4 class="font-bold text-safari-dark mb-2">Coverage Area</h4>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-safari-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Victoria Falls
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-safari-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Hwange National Park
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-safari-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Mana Pools
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-safari-green mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Lake Kariba
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Note -->
+                    <div class="p-6 bg-safari-light border-t border-gray-200">
+                        <p class="text-center text-gray-700">
+                            <strong>Note:</strong> We operate safari experiences throughout Zimbabwe. While based in Harare, 
+                            our guides and operations cover all major safari destinations in the country.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Embedded Google Map Alternative (Uncomment and add your API key) -->
+                <!--
+                <div class="rounded-2xl shadow-xl overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.456789012345!2d31.033333!3d-17.783333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ3JzAwLjAiUyAzMcKwMDInMDAuMCJF!5e0!3m2!1sen!2szw!4v1234567890123!5m2!1sen!2szw" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us for Planning -->
+    <section class="py-16 bg-safari-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Why Plan Your Safari With Africape?
+                    </h2>
+                    <p class="text-xl max-w-3xl mx-auto">
+                        We're not just booking agents—we're your local safari partners in Zimbabwe.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Reason 1 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">🇿🇼</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Local Experts</h3>
+                        <p class="text-gray-300">
+                            Born and raised in Zimbabwe with deep knowledge of the land, wildlife, and culture.
+                        </p>
+                    </div>
+                    
+                    <!-- Reason 2 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">✨</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Bespoke Planning</h3>
+                        <p class="text-gray-300">
+                            Every itinerary is custom-built from scratch based on your specific interests and dreams.
+                        </p>
+                    </div>
+                    
+                    <!-- Reason 3 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">🤝</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Direct Access</h3>
+                        <p class="text-gray-300">
+                            Communicate directly with your safari planner—no call centers or middlemen.
+                        </p>
+                    </div>
+                    
+                    <!-- Reason 4 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">💚</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Sustainable Focus</h3>
+                        <p class="text-gray-300">
+                            We prioritize lodges and experiences that benefit local communities and conservation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#contact-form" 
+                       class="inline-block bg-safari-gold text-safari-dark hover:bg-yellow-500 font-bold py-3 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105">
+                        Start Planning Your Safari
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/90 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-safari-green rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-xl">A</span>
+                        </div>
+                        <span class="font-bold text-2xl">Africape</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Crafting bespoke safari experiences in Zimbabwe.
+                    </p>
+                </div>
+                
+                <!-- Explore Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-safari-gold">Home</a></li>
+                        <li><a href="/pages/safari-journeys.html" class="text-gray-400 hover:text-safari-gold">Safari Journeys</a></li>
+                        <li><a href="/pages/the-africape-way.html" class="text-gray-400 hover:text-safari-gold">The Africape Way</a></li>
+                        <li><a href="/pages/contact.html" class="text-gray-400 hover:text-safari-gold">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="text-gray-400 hover:text-safari-gold">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-safari-gold">Terms of Service</a></li>
+                        <li><a href="/cookies" class="text-gray-400 hover:text-safari-gold">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Email: info@africape.com</li>
+                        <li class="text-gray-400">Phone: +263 772 852 040</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-500">© 2025 Africape. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                inquiryType: document.getElementById('inquiryType').value,
+                travelMonth: document.getElementById('travelMonth').value,
+                travelers: document.getElementById('travelers').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Basic validation
+            if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real application, you would send this data to your server
+            // For now, we'll just show a success message
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Thank you for your message! We will contact you within 24 hours.');
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to top of form
+            document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

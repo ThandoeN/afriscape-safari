@@ -1,0 +1,107 @@
+/* src/css/input.css */
+
+/* Import Tailwind's base styles */
+@tailwind base;
+/* Import Tailwind's component classes */
+@tailwind components;
+/* Import Tailwind's utility classes */
+@tailwind utilities;
+
+/* Custom base styles (layer ensures proper ordering) */
+@layer base {
+  html {
+    @apply scroll-smooth; /* Smooth scrolling */
+  }
+  
+  body {
+    @apply font-opensans text-safari-text bg-safari-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold text-safari-dark;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  /* Custom link styles */
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply bg-safari-green hover:bg-safari-dark text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-safari-gold focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-safari-gold text-safari-gold hover:bg-safari-gold hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-safari-gold focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-white text-white hover:bg-white hover:text-safari-dark font-bold py-3 px-8 rounded-lg transition-all duration-300;
+  }
+  
+  /* Card component */
+  .card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  /* Container utilities */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+
+  /* Custom animation delays */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Custom slide down animation */
+@keyframes slide-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+
+  /* Section padding */
+  .section-padding {
+    @apply py-12 md:py-20 lg:py-24;
+  }
+  
+  /* Navigation link styles */
+  .nav-link {
+    @apply text-safari-dark hover:text-safari-green font-medium transition-colors duration-300;
+  }
+}
