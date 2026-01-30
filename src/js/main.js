@@ -69,6 +69,7 @@ function addSmoothScroll() {
     });
 }
 
+
 // Initialize scroll animations
 function initAnimations() {
     // Add intersection observer for fade-in animations
@@ -90,6 +91,7 @@ function initAnimations() {
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 }
 
+
 // Form handling (to be implemented later)
 function handleNewsletterSubmit(e) {
     e.preventDefault();
@@ -99,6 +101,9 @@ function handleNewsletterSubmit(e) {
     alert('Thank you for subscribing!');
     e.target.reset();
 }
+
+//safari page 
+
 
 // Export functions for use in other modules
 export { initMobileMenu, addSmoothScroll, handleNewsletterSubmit };

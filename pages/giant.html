@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Your Dream Safari - Afriscape</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'safari-dark': '#1a472a',
+              'safari-green': '#2e8b57',
+              'safari-gold': '#d4af37',
+              'safari-light': '#f8f8f8',
+              'safari-text': '#666666',
+            },
+            fontFamily: {
+              'montserrat': ['Montserrat', 'sans-serif'],
+              'opensans': ['Open Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+      .card-gradient {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+      }
+      
+      .border-gradient {
+        border: 2px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(135deg, #d4af37, #2e8b57) border-box;
+      }
+      
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #1a472a 0%, #2e8b57 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+</head>
+<body class="bg-safari-light font-opensans text-safari-text min-h-screen flex items-center justify-center p-4">
+    <!-- Giant Card -->
+    <div class="max-w-6xl w-full">
+        <div class="card-gradient border-gradient rounded-3xl shadow-2xl overflow-hidden hover-lift">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <!-- Left Content Section -->
+                <div class="p-10 lg:p-16 flex flex-col justify-between">
+                    <div>
+                        <!-- Badge -->
+                        <span class="inline-block bg-safari-green/10 text-safari-green text-sm font-bold px-4 py-2 rounded-full mb-6">
+                            <i class="fas fa-magic mr-2"></i> Custom Experience
+                        </span>
+                        
+                        <!-- Title -->
+                        <h2 class="text-4xl lg:text-5xl font-montserrat font-bold text-safari-dark mb-6 leading-tight">
+                            Design Your <span class="text-gradient">Dream Safari</span>
+                        </h2>
+                        
+                        <!-- Description -->
+                        <p class="text-lg lg:text-xl text-safari-text mb-8 leading-relaxed">
+                            Can't find the perfect fit? Let's co-create a journey tailored to your unique interests. From initial consultation and interest mapping to itinerary drafting and refinement, we collaborate with you every step of the way to craft a truly personal adventure.
+                        </p>
+                        
+                        <!-- Features List -->
+                        <div class="mb-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-safari-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-comments text-safari-gold"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-montserrat font-bold text-safari-dark">Initial Consultation</h4>
+                                        <p class="text-sm text-safari-text">Discuss your vision and preferences</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-safari-green/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-map-marked-alt text-safari-green"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-montserrat font-bold text-safari-dark">Interest Mapping</h4>
+                                        <p class="text-sm text-safari-text">Identify key activities and experiences</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-safari-dark/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-route text-safari-dark"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-montserrat font-bold text-safari-dark">Itinerary Drafting</h4>
+                                        <p class="text-sm text-safari-text">Create a personalized journey outline</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-8 h-8 rounded-full bg-purple-500/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-tools text-purple-500"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-montserrat font-bold text-safari-dark">Refinement</h4>
+                                        <p class="text-sm text-safari-text">Fine-tune every detail to perfection</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+                    
+                    <!-- CTA Button -->
+                    <div>
+                        <a href="#" class="inline-flex items-center justify-center bg-safari-green hover:bg-safari-dark text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 group w-full lg:w-auto">
+                            <span class="mr-3">View Details</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Visual/Footer Section -->
+                <div class="bg-safari-dark text-white p-10 lg:p-16 flex flex-col">
+                    <!-- Decorative Pattern -->
+                    <div class="mb-8">
+                        <div class="w-20 h-1 bg-safari-gold mb-4"></div>
+                        <h3 class="text-3xl font-montserrat font-bold">Afriscape</h3>
+                        <p class="text-safari-light/70 mt-2">Crafting unforgettable safari experiences</p>
+                    </div>
+                    
+                    <!-- Divider -->
+                    <div class="w-full h-px bg-white/20 my-8"></div>
+                    
+                    <!-- Footer Content -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Explore Column -->
+                        <div>
+                            <h4 class="font-montserrat font-bold text-lg mb-4 text-safari-gold">Explore</h4>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#" class="flex items-center text-white/80 hover:text-white transition-colors duration-300 group">
+                                        <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-white/80 hover:text-white transition-colors duration-300 group">
+                                        <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                        Safari Journeys
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-white/80 hover:text-white transition-colors duration-300 group">
+                                        <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                        The Afriscape Way
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Legal & Contact Column -->
+                        <div>
+                            <h4 class="font-montserrat font-bold text-lg mb-4 text-safari-gold">Legal</h4>
+                            <ul class="space-y-3 mb-8">
+                                <li>
+                                    <a href="#" class="flex items-center text-white/80 hover:text-white transition-colors duration-300 group">
+                                        <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-white/80 hover:text-white transition-colors duration-300 group">
+                                        <i class="fas fa-chevron-right text-xs mr-2 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                        Terms of Service
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <h4 class="font-montserrat font-bold text-lg mb-4 text-safari-gold">Contact</h4>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-10 h-10 rounded-full bg-safari-gold/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-safari-gold"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email us at</p>
+                                    <a href="mailto:info@afriscape.com" class="text-white hover:text-safari-gold transition-colors duration-300 font-bold">
+                                        info@afriscape.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Footer -->
+                    <div class="mt-auto pt-8">
+                        <div class="flex items-center justify-between border-t border-white/20 pt-6">
+                            <p class="text-white/60 text-sm">
+                                © 2025 Afriscape. All rights reserved.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white/60 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-white/60 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-white/60 hover:text-white transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements (Optional) -->
+        <div class="absolute top-0 right-0 -z-10">
+            <div class="w-64 h-64 rounded-full bg-safari-green/5 blur-3xl"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 -z-10">
+            <div class="w-96 h-96 rounded-full bg-safari-gold/5 blur-3xl"></div>
+        </div>
+    </div>
+
+    <script>
+        // Add hover effect to the card
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.hover-lift');
+            
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>
